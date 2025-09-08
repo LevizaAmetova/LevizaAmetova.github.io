@@ -1,0 +1,125 @@
+/* Общие стили для всего тела страницы */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Neucha', cursive, 'Jura', sans-serif, 'Open Sans Condensed', sans-serif;
+    line-height: 1.6;
+}
+
+/* Фон для изображения с кофе */
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/w3images/coffeehouse.jpg");
+    min-height: 75vh; /* Используем vh для адаптивности */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+}
+
+/* Скрытый класс для меню */
+.menu {
+    display: none;
+}
+
+/* Верхняя навигационная панель */
+.w3-top {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Стиль для кнопок меню */
+.w3-button {
+    padding: 14px 16px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Эффект при наведении */
+.w3-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Заголовки разделов */
+h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Общее оформление карточек меню */
+.w3-card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+/* Стиль для вкладок меню */
+.tablink {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.tablink:hover {
+    background-color: #ddd;
+}
+
+/* Активная вкладка */
+.w3-dark-grey {
+    background-color: #555 !important;
+    color: #fff;
+}
+
+/* Контейнер с фоном и размерами */
+.w3-sand {
+    background-color: #fdf5e6;
+}
+
+.w3-grayscale {
+    filter: grayscale(100%);
+}
+
+/* Стиль для карт Google Map */
+#googleMap {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Футер */
+footer {
+    background-color: #f1f1f1;
+    padding: 16px;
+    text-align: center;
+}
+
+/* Ссылки внутри футера */
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .w3-row {
+        flex-direction: column;
+    }
+    .w3-col {
+        width: 100%;
+    }
+    /* Центрирование текста и кнопок */
+    .w3-display-middle, .w3-display-bottomleft, .w3-display-bottomright {
+        text-align: center;
+    }
+}
